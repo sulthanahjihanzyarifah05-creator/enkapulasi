@@ -1,7 +1,7 @@
 <h1>ENKAPULASI</h1>
 <h4>.</h4>
 
-<h2>CLASS STUDENT</h2>
+<h2>1. CLASS STUDENT</h2>
 <h4>Program ini merupakan contoh enkapsulasi (encapsulation) dalam pemrograman berorientasi objek (OOP).Kelas Student menyembunyikan (men-private) data sensitif seperti name dan score, 
   serta menyediakan akses terkontrol melalui getter, setter, dan method khusus agar nilai tetap valid (0–100).</h4>
 <h3>Deklarasi Atribut</h3>
@@ -27,7 +27,7 @@
 <pre><img width="292" height="59" alt="image" src="https://github.com/user-attachments/assets/70d5fc43-e629-4ca4-9f40-656e9e2f66c8" /></pre>
 <h4>Berfungsi untuk menampilkan informasi mahasiswa ke konsol. Dapat digunakan untuk pengecekan hasil input.</h4>
 
-<h2>CLASS TEAM</h2>
+<h2>2. CLASS TEAM</h2>
 <h4>Kelas Team berfungsi untuk menyimpan dan mengelola sekelompok objek Student. Disini diterapkan konsep komposisi (composition), di mana Team memiliki (has-a) kumpulan Student.
   Selain itu, program juga menjaga enkapsulasi dengan cara tidak memberikan akses langsung ke struktur data internal (List).</h4>
 <h3>Deklarasi Atribut</h3>
@@ -52,3 +52,33 @@
 <h3>Menampilkan Anggota Tim</h3>
 <pre><img width="512" height="84" alt="image" src="https://github.com/user-attachments/assets/8d5bda65-41f8-4040-a43b-fad19e15938f" /></pre>
 <h4>Menampilkan daftar seluruh anggota dengan nama dan nilai ke konsol. Memanfaatkan metode getName() dan getScore() dari kelas Student.</h4>
+
+<h2>3. CLASS IMMUTABLESTUDENT</h2>
+<h4>Kelas ImmutableStudent adalah versi tidak dapat diubah (immutable) dari kelas Student. Setelah objek dibuat, nilai dan nama tidak bisa dimodifikasi. 
+  Konsep ini sering digunakan untuk menjaga konsistensi data dan keamanan thread (thread-safety).</h4>
+
+<h3>Deklarasi Kelas</h3>
+<pre><img width="251" height="17" alt="image" src="https://github.com/user-attachments/assets/02feb773-2305-4d4e-ba2b-1e969d015585" /></pre>
+<h4>Kata kunci final membuat kelas ini tidak bisa diwariskan (no subclass).Ini penting untuk menjaga agar sifat “immutable”-nya tidak rusak oleh subclass yang menambahkan setter atau perubahan data.</h4>
+
+<h3>Atribut Final</h3>
+<pre><img width="172" height="29" alt="image" src="https://github.com/user-attachments/assets/b57e81f1-f551-4135-a05d-75f959007ada" /></pre>
+<h4>Semua atribut dideklarasikan private dan final. Artinya nilai hanya bisa diisi sekali di constructor saja, tidak bisa diubah setelahnya.
+  Ini inti dari konsep immutability.</h4>
+
+<h3>Constructor dengan Validasi</h3>
+<pre><img width="457" height="101" alt="image" src="https://github.com/user-attachments/assets/47c16164-c2a0-40fc-bdf5-beb662c80481" /></pre>
+<h4>Konstruktor memastikan nilai score tetap berada di rentang 0–100. Jika nilai di luar batas, program melempar exception. Ini menjaga agar data dalam objek selalu valid sejak pertama kali dibuat.</h4>
+
+<h3>Getter (Tanpa Setter)</h3>
+<pre><img width="286" height="26" alt="image" src="https://github.com/user-attachments/assets/de435991-4a3a-4015-a222-fc7f1d90a550" /></pre>
+<h4>Hanya ada getter, tanpa setter. Nilai tidak bisa diubah dari luar class, karakteristik utama objek immutable.</h4>
+
+<h3>Membuat Objek Baru dengan Nilai Baru</h3>
+<pre><img width="329" height="85" alt="image" src="https://github.com/user-attachments/assets/ffa207f0-6ba4-4b0e-a5c2-3b392f6e2b1e" /></pre>
+<h4>method ini membuat objek baru dengan nilai score yang diperbarui. Jika hasil penjumlahan melebihi 100 atau kurang dari 0, nilainya akan disesuaikan ke batas terdekat (100 atau 0).
+  Dengan cara ini, objek lama tetap tidak berubah, menjaga prinsip immutability.</h4>
+
+<h3>Menampilkan Informasi</h3>
+<pre><img width="268" height="67" alt="image" src="https://github.com/user-attachments/assets/a54c97b1-2756-4a5b-bf45-22d6b86c4495" /></pre>
+<h4>Method sederhana untuk menampilkan data ke konsol</h4>
