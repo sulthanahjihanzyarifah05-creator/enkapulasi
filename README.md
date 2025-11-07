@@ -1,5 +1,5 @@
 <h1>ENKAPULASI</h1>
-<h4>.</h4>
+<h4>Menyembunyikan data (atribut) di dalam suatu kelas agar tidak bisa diakses atau diubah secara langsung dari luar, melainkan hanya melalui method (fungsi) yang disediakan oleh kelas tersebut.</h4>
 
 <h2>1. CLASS STUDENT</h2>
 <h4>Program ini merupakan contoh enkapsulasi (encapsulation) dalam pemrograman berorientasi objek (OOP).Kelas Student menyembunyikan (men-private) data sensitif seperti name dan score, 
