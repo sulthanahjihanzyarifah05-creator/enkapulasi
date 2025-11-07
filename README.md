@@ -106,18 +106,22 @@
 
 <h3>f. Menampilkan Hasil</h3>
 <pre><img width="325" height="268" alt="image" src="https://github.com/user-attachments/assets/1a1675e0-9f70-4934-bf07-45ab41c91f74" /></pre>
-<h4> 1. Otput Student dan Team
-  Ini berasal dari method displayTeam() di kelas Team.
+
+<h4> 1. Otput Student dan Team</h4>
+  <h4>Ini berasal dari method displayTeam() di kelas Team.
   Program menampilkan seluruh anggota tim yang sudah ditambahkan melalui addMember().
-  objek Student dapat dimanipulasi dan disimpan bersama dalam satu wadah (Team) yaitu penerapan enkapsulasi dan relasi antar objek (komposisi).</h4>
+  objek Student dapat dimanipulasi dan disimpan bersama dalam satu wadah (Team) yaitu penerapan enkapsulasi dan relasi antar objek (komposisi)</h4>
   <pre><img width="304" height="86" alt="image" src="https://github.com/user-attachments/assets/09f82625-889d-4482-8d07-fc3ec6fca499" /></pre>
-<h4>2. Output ImmutableStudent
-  Ini hasil dari membuat objek ImmutableStudent im1 = new ImmutableStudent("Asep cah bagus", 85);
+
+<h4>2. Output ImmutableStudent</h4>
+ <h4> Ini hasil dari membuat objek ImmutableStudent im1 = new ImmutableStudent("Asep cah bagus", 85);
   Method displayInfo() menampilkan nama dan nilai awalnya, yaitu Asep cah bagus (85).</h4>
   <pre><img width="240" height="47" alt="image" src="https://github.com/user-attachments/assets/90010bf2-d244-4b3b-ae04-fbeea85511f2" /></pre>
+
 <h4>Di sini program memanggil withAddedScore(10).Tapi karena ImmutableStudent tidak bisa diubah (immutable), method ini tidak mengubah objek im1,
   melainkan membuat objek baru (im2) dengan nilai 85 + 10 = 95. Saat im2.displayInfo() dijalankan, yang tampil adalah versi baru (nilai 95). </h4>
   <pre><img width="183" height="48" alt="image" src="https://github.com/user-attachments/assets/fa14ffab-874b-4e60-88e6-468fe165b220" /></pre>
+
 <h4>Baris ini menunjukkan bahwa objek im1 tetap memiliki nilai 85, walaupun kita sudah “menambah nilai”. Ini membuktikan prinsip immutability (objek tidak dapat diubah setelah dibuat).</h4>
 <pre><img width="302" height="59" alt="image" src="https://github.com/user-attachments/assets/eb6f6c68-7d2c-4ff6-a8a1-e5f6eb688de3" /></pre>
 
