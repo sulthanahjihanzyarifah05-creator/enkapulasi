@@ -82,3 +82,46 @@
 <h3>Menampilkan Informasi</h3>
 <pre><img width="268" height="67" alt="image" src="https://github.com/user-attachments/assets/a54c97b1-2756-4a5b-bf45-22d6b86c4495" /></pre>
 <h4>Method sederhana untuk menampilkan data ke konsol</h4>
+
+<h2>CLASS MAIN</h2>
+<h4>Kelas Main berfungsi sebagai driver class untuk menjalankan dan menguji fungsionalitas dari: 
+  ~Student dan Team → versi mutable (data bisa berubah)
+  ~ImmutableStudent → versi immutable (data tidak bisa diubah)</h4>
+
+<h3>1. Membuat tiga objek Student</h3>
+<pre><img width="400" height="65" alt="image" src="https://github.com/user-attachments/assets/b46ad78e-dc12-451a-bd9a-43db5bd45d1f" /></pre>
+<h4>Objek Student ini mutable, jadi nilainya bisa diubah lewat setter jika tersedia</h4>
+
+<h3>2. objek Team dan menambahkan anggota</h3>
+<pre><img width="173" height="91" alt="image" src="https://github.com/user-attachments/assets/6a9d2259-c6be-46fb-a97b-de48a8d8da90" /></pre>
+<h4>Data dimasukkan ke dalam struktur data (mungkin ArrayList) di dalam Team dan Menampilkan daftar anggota,Output menampilkan semua anggota dan nilai mereka</h4>
+
+<h3>3. objek immutable</h3>
+<pre><img width="419" height="41" alt="image" src="https://github.com/user-attachments/assets/6e8a86e8-2c38-436d-b7c4-e4afcadc11bc" /></pre>
+<h4>nilai tetap</h4>
+
+<h3>4. Tambah nilai 10</h3>
+<pre><img width="290" height="49" alt="image" src="https://github.com/user-attachments/assets/29545a2c-00df-49f5-9927-47fe2199d84b" /></pre>
+<h4>im2 adalah objek baru (bukan hasil modifikasi im1). Nilainya menjadi 95, tapi im1 tetap 85.</h4>
+
+<h3>5. Menampilkan Hasil</h3>
+<pre><img width="325" height="268" alt="image" src="https://github.com/user-attachments/assets/1a1675e0-9f70-4934-bf07-45ab41c91f74" /></pre>
+<h4> 1. Otput Student dan Team
+  Ini berasal dari method displayTeam() di kelas Team.
+  Program menampilkan seluruh anggota tim yang sudah ditambahkan melalui addMember().
+  objek Student dapat dimanipulasi dan disimpan bersama dalam satu wadah (Team) yaitu penerapan enkapsulasi dan relasi antar objek (komposisi).</h4>
+  <pre><img width="304" height="86" alt="image" src="https://github.com/user-attachments/assets/09f82625-889d-4482-8d07-fc3ec6fca499" /></pre>
+<h4>2. Output ImmutableStudent
+  Ini hasil dari membuat objek ImmutableStudent im1 = new ImmutableStudent("Asep cah bagus", 85);
+  Method displayInfo() menampilkan nama dan nilai awalnya, yaitu Asep cah bagus (85).</h4>
+  <pre><img width="240" height="47" alt="image" src="https://github.com/user-attachments/assets/90010bf2-d244-4b3b-ae04-fbeea85511f2" /></pre>
+<h4>Di sini program memanggil withAddedScore(10).Tapi karena ImmutableStudent tidak bisa diubah (immutable), method ini tidak mengubah objek im1,
+  melainkan membuat objek baru (im2) dengan nilai 85 + 10 = 95. Saat im2.displayInfo() dijalankan, yang tampil adalah versi baru (nilai 95). </h4>
+  <pre><img width="183" height="48" alt="image" src="https://github.com/user-attachments/assets/fa14ffab-874b-4e60-88e6-468fe165b220" /></pre>
+<h4>Baris ini menunjukkan bahwa objek im1 tetap memiliki nilai 85, walaupun kita sudah “menambah nilai”. Ini membuktikan prinsip immutability (objek tidak dapat diubah setelah dibuat).</h4>
+<pre><img width="302" height="59" alt="image" src="https://github.com/user-attachments/assets/eb6f6c68-7d2c-4ff6-a8a1-e5f6eb688de3" /></pre>
+
+<h4>ImmutableStudent melindungi data agar tidak bisa diubah secara langsung. Setiap perubahan menghasilkan objek baru, bukan memodifikasi yang lama.
+  Hal ini berguna untuk keamanan data dan mencegah efek samping dalam program besar.</h4>
+
+
